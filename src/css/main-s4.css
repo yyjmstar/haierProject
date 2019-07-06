@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* 第四部分大家都在说 */
+
+.topic-saying-mod {
+    margin-bottom: 20px
+}
+
+.topic-saying-mod .mod-hd {
+    background-color: #2979ff
+}
+
+.topic-saying-mod .mod-hd .tps-ico {
+    background-position: -41px -271px
+}
+
+.topic-saying-mod .mod-bd {
+    padding: 10px 0 0
+}
+
+.topic-saying-mod .mod-bd .topic-wrap {
+    position: relative
+}
+
+.topic-saying-mod .mod-bd .topic-list {
+    padding-bottom: 10px;
+    width: 3000px
+}
+
+.topic-saying-mod .mod-bd .sc-slider {
+    overflow: hidden;
+    width: 1190px;
+    height: 374px
+}
+
+.topic-saying-mod .mod-bd .scroll-btn {
+    top: 120px;
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer
+}
+
+.backBtn,
+.j_eventBg {
+    position: absolute;
+    top: 0
+}
+
+.topic-saying-mod .mod-bd .sc-prev {
+    left: 0;
+    background-position: -42px -304px
+}
+
+.topic-saying-mod .mod-bd .sc-next {
+    right: 0;
+    background-position: -65px -304px
+}
+
+.topic-saying-mod .mod-bd .topic-s-item {
+    transition: height linear .3s;
+    margin-right: 10px;
+    float: left;
+    width: 290px;
+    background-color: #fff;
+    padding-bottom: 10px;
+    overflow: hidden
+}
+
+.topic-saying-mod .mod-bd .tps-img {
+    width: 290px;
+    height: 250px
+}
+
+.topic-saying-mod .mod-bd .tps-link {
+    display: block;
+    margin: 10px 0;
+    padding: 0 10px
+}
+
+.topic-saying-mod .mod-bd .tps-link .dis-txt {
+    color: #333;
+    margin: 10px 0
+}
+
+.topic-saying-mod .mod-bd .tps-link:hover .dis-txt,
+.topic-saying-mod .mod-bd .tps-link:hover .link-txt {
+    color: #2979ff
+}
+
+.topic-saying-mod .mod-bd .link-wrap {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.topic-saying-mod .mod-bd .link-txt {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    color: #999
+}
+
+.topic-saying-mod .mod-bd .mod-price {
+    float: right;
+    font-size: 12px
+}
+
+.topic-saying-mod .mod-bd .align-right {
+    padding: 0 10px;
+    line-height: 24px
+}

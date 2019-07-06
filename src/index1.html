@@ -4,26 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index-v2.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/top-header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/main-s1.css">
+    <link rel="stylesheet" href="css/main-s2.css">
+    <link rel="stylesheet" href="css/main-s3.css">
+    <link rel="stylesheet" href="css/main-s4.css">
+    <link rel="stylesheet" href="css/main-s5.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
     <!-- top部分 -->
     <div class="top-bar">
         <div class="bar-wrap layout-grid clearfix">
-            <div class="location-wrap dw">
+            <div class="location-wrap">
                 <i class="ico"></i>
                 <span class="s-city">
-                    <i class="em-city js-choose-city">青岛</i>
+                    <i>青岛</i>
                 </span>
             </div>
             <ul class="bar-links fd-right">
-                <li class="w-login js-login-info">嗨，欢迎来到顺逛官方商城 请<a href="javascript:;" class="register" style="padding: 3px 5px; background: #33beff; color: #fff; border-radius: 3px; margin-left: 5px;">登录</a> &nbsp;|&nbsp; <a href="javascript:;">免费注册</a></li>
+                <li class="w-login">嗨，欢迎来到顺逛官方商城 请<a href="javascript:;" class="register">登录</a> &nbsp;|&nbsp; <a href="javascript:;">免费注册</a></li>
                 <li><a href="javascript:;">我的顺逛</a></li>
                 <li class="links-ver"></li>
-                <li><a href="javascript:;" class="j_sg">顺逛<img class="img-app-qr" width="194" height="202" src=""
-                            alt="顺逛APP"></a></li>
+                <li><a href="javascript:;">顺逛<img class="img-app-qr" width="194" height="202" src="" alt="顺逛APP"></a>
+                </li>
                 <li class="links-ver"></li>
                 <li><a href="javascript:;">互动社区</a></li>
                 <li class="links-ver"></li>
@@ -48,10 +55,10 @@
     <!-- header部分 -->
     <div class="head-wrap">
         <div class="layout-grid">
-            <div class="search-mod all-header-cont clearfix">
+            <div class="search-mod clearfix">
                 <div class="h1-site">
-                    <div class="half-slg">
-                        <a class="a-logo" href="http://www.shunguang.com/" title="海尔顺逛商城-买家电够省心">
+                    <div>
+                        <a href="http://www.shunguang.com/" title="海尔顺逛商城-买家电够省心">
                             <img src="./img/logo.png" width="125" height="39" alt="海尔顺逛商城-买家电够省心">
                         </a>
                         <span class="s-slogan">
@@ -76,14 +83,15 @@
                         <a href="javascript:;">变频空调</a>
                         <a href="javascript:;">电热水器</a>
                     </div>
+                    <!-- 搜索框下拉列表 -->
                     <ul class="ul-searchKeyList" style="display:none;"></ul>
                 </div>
                 <!-- 购物车 -->
-                <div class="cart-wrap js_cart">
+                <div class="cart-wrap">
                     <div class="mini-cart">
                         <span class="cart-ico"></span>
                         <a href="javascript:;">我的购物车</a>
-                        <i class="shop-num js-cart-num">0</i>
+                        <i class="shop-num">0</i>
                     </div>
                     <div class="mini-cart-list">
                         <div class="cart-empty-tip">
@@ -98,7 +106,8 @@
     <!-- 导航栏部分 -->
     <div class="nav-bar clearfix">
         <div class="layout-grid">
-            <div class="category-mod all-category-box">
+            <!-- 商品分类侧边栏 -->
+            <div class="category-mod">
                 <a href="javascript:;" class="category-hd" target="_blank">
                     <span class="cate-tit">商品分类</span><i class="cate-ico"></i>
                 </a>
@@ -107,129 +116,136 @@
                         <ul class="nav_ul">
                             <li>
                                 <a href="javascript:;" target="_blank">冰箱</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">空调</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">洗衣机</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">电视</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">热水器</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">厨房电器</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">冷柜</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">智能产品</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">净水机</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">生活小家电</a>
+                                <i></i>
                             </li>
                             <li>
                                 <a href="javascript:;" target="_blank">厨房小家电</a>
+                                <i></i>
                             </li>
                         </ul>
                     </div>
-                    <div class="show" style="width:0">
-                        <div class="showpanel none" style="height: 430px; width: 447px; left: -447px;">
-                            <div class="panel_left" style="height: 430px; width: 447px;">
-                                <div class="panel_zuo_ul left  " style="height: 430px;">
-                                    <ul class="panel_zuo_ulZou left">
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic1.jpg">单门
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic2.jpg">两门
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic3.jpg">三门
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic4.jpg">多门
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic5.jpg">对开
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <img src="./img/nav-side-pic6.jpg">干湿分储
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="panel_recommend left">
-                                    <ul class="panel_recommend_coupon">
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <span class="red">限时优惠</span>
-                                                <img class="left" src="./img/detail-pict1.jpg">
-                                                <div class="panel_recommend_right">
-                                                    <i class="name">BCD-470WDPG 470升十字对开变频静音节能干湿分储电冰箱</i>
-                                                    <i class="price">¥4,399</i>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <span></span>
-                                                <img class="left" src="./img/detail-pict2.jpg">
-                                                <div class="panel_recommend_right">
-                                                    <i class="name">BCD-258WDVLU1</i>
-                                                    <i class="price">¥2,999</i>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="panel_recommend_new">
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <span class="blue">最新单品</span>
-                                                <img class="left" src="./img/detail-pict3.jpg">
-                                                <div class="panel_recommend_right">
-                                                    <i class="name">BCD-642WDVMU1 642升变频对开门大容量冰箱</i>
-                                                    <i class="price">¥4,199</i>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" target="_blank">
-                                                <span></span>
-                                                <img class="left" src="./img/detail-pict4.jpg">
-                                                <div class="panel_recommend_right">
-                                                    <i class="name">BCD-458WDVMU1 458升风冷无霜十字对开门 变频干湿分储 WIFI智能家用冰箱</i>
-                                                    <i class="price">¥4,199</i>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <!-- 商品侧边栏鼠标悬浮出现的部分 -->
+                    <div class="nav-side-item">
+                        <div class="left">
+                            <ul>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic1.jpg">单门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic2.jpg">两门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic3.jpg">三门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic4.jpg">多门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic5.jpg">对门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javscript:;" target="_blank">
+                                        <img src="./img/nav-side-pic6.jpg">干湿分储
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <span class="red">限时优惠</span>
+                                        <img class="pic-left" src="./img/detail-pict1.jpg">
+                                        <div class="info-right">
+                                            <i class="name">BCD-470WDPG 470升十字对开变频静音节能干湿分储电冰箱</i>
+                                            <i class="price">¥4,799</i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <span></span>
+                                        <img class="pic-left" src="./img/detail-pict2.jpg">
+                                        <div class="info-right">
+                                            <i class="name">BCD-258WDVLU1</i>
+                                            <i class="price">¥2,799</i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <span class="blue">最新单品</span>
+                                        <img class="pic-left" src="./img/detail-pict3.jpg">
+                                        <div class="info-right">
+                                            <i class="name">BCD-642WDVMU1 642升变频对开门大容量冰箱</i>
+                                            <i class="price">¥4,199</i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <span></span>
+                                        <img class="pic-left" src="./img/detail-pict4.jpg">
+                                        <div class="info-right">
+                                            <i class="name">BCD-458WDVMU1 458升风冷无霜十字对开门 变频干湿分储 WIFI智能家用冰箱</i>
+                                            <i class="price">¥3,899</i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <!--cate end-->
                 </div>
             </div>
-            <!-- 导航栏 -->
+            <!-- 横向导航栏 -->
             <ul class="ul-nav">
                 <li>
                     <a href="javascript:;" target="_blank">首页</a>
@@ -267,68 +283,66 @@
         <div class="layout-grid clearfix">
             <div class="fd-left banner-wrap">
                 <div class="main-banner">
-                    <div class="delaybox banner-slidewrap" style="left: -400%;">
-                        <div class="slide-each slide-each-4" style="left: 0%;">
+                    <div class="banner-slidewrap">
+                        <!-- banner幻灯片 -->
+                        <div>
                             <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="3" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpgb.jpg" width="952" height="430" alt="成套家电" title="成套家电">
+                                <img src="" width="952" height="430" alt="成套家电" title="成套家电">
                             </a>
                         </div>
-                        <div class="slide-each slide-each-1" style="left: 100%;">
+                        <div>
                             <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="0" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpg" width="952" height="430" alt="4-6日洗衣机分会场" title="4-6日洗衣机分会场">
+                                <img src="" height="430" alt="4-6日洗衣机分会场" title="4-6日洗衣机分会场">
                             </a>
                         </div>
-                        <div class="slide-each slide-each-2" style="left: 200%;">
+                        <div>
                             <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="1" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpg" width="952" height="430" alt="智慧成套" title="智慧成套">
+                                <img src="" height="430" alt="智慧成套" title="智慧成套">
                             </a>
                         </div>
-                        <div class="slide-each slide-each-3" style="left: 300%;">
+                        <div>
                             <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="2" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpg" width="952" height="430" alt="彩电超品日" title="彩电超品日">
+                                <img src="" height="430" alt="彩电超品日" title="彩电超品日">
                             </a>
                         </div>
-                        <div class="slide-each slide-each-4" style="left: 400%;">
+                        <div>
                             <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="3" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpg" width="952" height="430" alt="成套家电" title="成套家电">
-                            </a>
-                        </div>
-                        <div class="slide-each slide-each-1" style="left: 500%;">
-                            <a href="javascript:;" target="_blank" rel="nofollow" ref="ixv5-2-bn-1">
-                                <img class="child0" data-growing-idx="0" src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/ee0af41b5f35484ba6c6cd849ca0346b.jpg" width="952" height="430" alt="4-6日洗衣机分会场" title="4-6日洗衣机分会场">
+                                <img src="" height="430" alt="成套家电" title="成套家电">
                             </a>
                         </div>
                     </div>
-                    <p class="p-slide-thumb" style="margin-left: -44px;"><span class="s-thumb"></span><span class="s-thumb"></span><span class="s-thumb"></span><span class="s-thumb s-thumb-now"></span></p>
-                    <p class="wrapper p-slide-btn"><span class="s-thumb-prev"></span><span class="s-thumb-next"></span></p>
+                    <!-- banner图下面的按钮 -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
+            <!-- banner图左边信息 -->
             <div class="fd-right ehaier-inf">
-                <div class="inf-col member-inf">
+                <div class="member-inf">
                     <div class="user-img">
-                        <a href="javascript:;" class="link-member" target="_blank">
-                            <img src="http://cdn09.ehaier.com/sg2019/v5/images/idx_no_login.png" alt="" class="no-login" style="display: block;">
-                            <img src="http://cdn09.ehaier.com/sg2019/v5/images/user_pic.png" alt="" class="hav-log" style="display: none;">
+                        <a href="javascript:;" target="_blank">
+                            <img src="./img/idx_no_login.png" alt="">
                         </a>
                     </div>
                     <p class="user-hd">Hi~ 你好</p>
-                    <p class="user-rank none"></p>
                     <div class="sign-wrap">
-                        <a href="javascript:;" class="login-in btn-small">登录</a>
+                        <a href="javascript:;" class="btn-small">登录</a>
                         <a href="javascript:;" class="btn-small">注册</a>
                     </div>
-
                 </div>
                 <div class="grid-ud clearfix">
                     <a href="javascript:;" class="fd-left" target="_blank"><i class="sclub-ico"></i><br>会员俱乐部</a>
-                    <a href="javascript:;" class="fd-left wdz1" style="display: block;" target="_blank"><i class="ssg-ico"></i><br>升级顺逛店主</a>
-                    <a href="javascript:;" class="fd-left wdz2" style="display: none;" target="_blank"><i class="nosg-ico"></i><br>顺逛店主中心</a>
-                    <a href="javascript:;" class="fd-left wdz3" style="display: none;" target="_blank"><i class="nosg-ico"></i><br>我的海尔</a>
+                    <a href="javascript:;" class="fd-left" target="_blank"><i class="ssg-ico"></i><br>升级顺逛店主</a>
                 </div>
                 <div class="notice-inf">
                     <div class="notice-hd clearfix">
                         <span class="tit">商城公告</span>
-                        <a href="http://www.shunguang.com/article/alist138.html" class="link-more" target="_blank">更多</a>
+                        <a href="" class="link-more" target="_blank">更多</a>
                     </div>
                     <ul class="notice-bd">
                         <li><a href="javascript:;" target="_blank">顺逛机制升级通知</a></li>
@@ -342,25 +356,25 @@
                         <li class="ser_1">
                             <a href="javascript:;" target="_blank">
                                 <i class="ico"></i>
-                                <span class="service-txt">货到付款</span>
+                                <span>货到付款</span>
                             </a>
                         </li>
                         <li class="ser_2">
                             <a href="javascript:;" target="_blank">
                                 <i class="ico"></i>
-                                <span class="service-txt">超时免单</span>
+                                <span>超时免单</span>
                             </a>
                         </li>
                         <li class="ser_3">
                             <a href="javascript:;" target="_blank">
                                 <i class="ico"></i>
-                                <span class="service-txt">送装同步</span>
+                                <span>送装同步</span>
                             </a>
                         </li>
                         <li class="ser_4">
                             <a href="javascript:;" target="_blank">
                                 <i class="ico"></i>
-                                <span class="service-txt">全国联保</span>
+                                <span>全国联保</span>
                             </a>
                         </li>
                     </ul>
@@ -372,23 +386,657 @@
     <div class="saleHot-mod">
         <div class="layout-grid">
             <ul class="clearfix">
-                <li class="entry-anim">
+                <li>
                     <a href="javascript:;" target="_blank">
                         <img src="img/fh1.jpg" alt="厨电" title="厨电"></a>
                 </li>
-                <li class="entry-anim">
+                <li>
                     <a href="javascript:;" target="_blank">
                         <img src="img/fh2.jpg" alt="热水器" title="热水器"></a>
                 </li>
-                <li class="entry-anim">
+                <li>
                     <a href="javascript:;" target="_blank">
                         <img src="img/fh3.jpg" alt="净水" title="净水"></a>
                 </li>
-                <li class="entry-anim">
+                <li>
                     <a href="javascript:;" target="_blank">
                         <img src="img/fh4.jpg" alt="小家电" title="小家电"></a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <!-- 主体内容部分 -->
+    <!-- 第一部分精品推荐 -->
+    <div class="jptj-mod">
+        <div class="layout-grid">
+            <div class="mod-hd">
+                <h2 class="tit">
+                    <i class="jptj-ico tit-ico"></i>
+                    <span>精品推荐</span>
+                </h2>
+            </div>
+            <div class="mod-bd clearfix">
+                <div class="ver-jp-banner entry-anim">
+                    <a href="" alt="" title="每日推荐">
+                        <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/07/086e88a09366492a9b2d3a8766894626.jpg">
+                    </a>
+                </div>
+                <ul class="jp-list">
+                    <li class="fake-border-h fh_1"></li>
+                    <li class="fake-border-h fh_2"></li>
+                    <li class="fake-border-v"></li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title="海尔先行者挂式空调 1.5匹变频挂机 一级能效 节能省电 内外机自清洁 呼吸健康空调 PID双温差联动变频技术 精准控温 升级PMV 畅享便捷舒适生活 可控电辅热 制热更强劲" target="_blank">海尔先行者挂式空调 1.5匹变频挂机 一级能效 节能省电 内外机自清洁 呼吸健康空调
+                            PID双温差联动变频技术 精准控温 升级PMV 畅享便捷舒适生活 可控电辅热 制热更强劲</a>
+                        <span class="mod-price"><i>￥</i><span>2999.00</span></span>
+                    </li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2019/06/0963c93e0e2349b49a4f6c916019b129.jpg" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title="海尔先行者柜式空调 3匹变频柜机 专利自清洁 呼吸健康空气 一级能效 节能省电 一键PMV舒适便捷 多维立体送风更舒适 品质压缩机强劲节能 智能WIFI互联 轻松操控" target="_blank">海尔先行者柜式空调 3匹变频柜机 专利自清洁 呼吸健康空气 一级能效 节能省电 一键PMV舒适便捷
+                            多维立体送风更舒适 品质压缩机强劲节能 智能WIFI互联 轻松操控</a>
+                        <span class="mod-price"><i>￥</i><span>6999.00</span></span>
+                    </li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title="智能物联功能，实时掌控，打造智能生活；二级能效，省电新主流，48种送风方式，感受温柔自然风" target="_blank" data-growing-idx="23">智能物联功能，实时掌控，打造智能生活；二级能效，省电新主流，48种送风方式，感受温柔自然风</a>
+                        <span class="mod-price"><i>￥</i><span>3699.00</span></span>
+                    </li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title=" 470升十字对开变频静音节能干湿分储电冰箱" target="_blank" data-growing-idx="24"> 470升十字对开变频静音节能干湿分储电冰箱</a>
+                        <span class="mod-price"><i>￥</i><span>4799.00</span></span>
+                    </li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title="10公斤直驱变频滚筒洗衣机" target="_blank" data-growing-idx="25">10公斤直驱变频滚筒洗衣机</a>
+                        <span class="mod-price"><i>￥</i><span>4599.00</span></span>
+                    </li>
+                    <li class="jp-item">
+                        <a href="javascript:;" class="jp-img rg-anim" target="_blank"><img src="" alt=""></a>
+                        <a href="javascript:;" class="dis-txt" title="4K超高清 AI语音智能交互 131%纳米广色域技术 前置独立音响立体环绕音质 2G+16G超大内存 海量影视资源 钻石切割技术" target="_blank">4K超高清 AI语音智能交互 131%纳米广色域技术 前置独立音响立体环绕音质 2G+16G超大内存 海量影视资源 钻石切割技术</a>
+                        <span class="mod-price"><i>￥</i><span>2999.00</span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 第二部分新品首发 -->
+    <div class="channals-mod">
+        <div class="layout-grid">
+            <div class="chn-wrap clearfix">
+                <div class="chn-col chn-col1 new-first">
+                    <div class="mod-hd">
+                        <h2 class="tit">
+                            <span>新品首发</span>
+                        </h2>
+                    </div>
+                    <div class="mod-bd">
+                        <div class="link-block-wrap">
+                            <div class="fake-border-v"></div>
+                            <a href="" class="clearfix" target="_blank">
+                                <img src="" alt="新品频道" title="新品频道" class="lf-img">
+                                <span class="ver-border"></span>新品频道
+                                <p class="dis-txt">世界之所以绚丽多彩，源于对新的无止境追求 。</p>
+                            </a>
+                            <a href="" class="clearfix" target="_blank">
+                                <img src="" alt="甄选专场" title="甄选专场" class="lf-img">
+                                <span class="ver-border"></span>甄选专场
+                                <p class="dis-txt">甄选好物 用心生活</p>
+                            </a>
+                        </div>
+                        <div class="chn-bot-cover clearfix">
+                            <div>
+                                <a href="" target="_blank"><img src="" alt="海尔智能鞋柜 XG30-M18U1" title="海尔智能鞋柜 XG30-M18U1"></a>
+                            </div>
+                            <div>
+                                <a href="" alt="BCD-415WLDCT" title="BCD-415WLDCT"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chn-col custom-made">
+                    <div class="mod-hd">
+                        <h2 class="tit">
+                            <span>我要定制</span>
+                        </h2>
+                    </div>
+                    <div class="mod-bd">
+                        <div class="link-block-wrap link-block2">
+                            <a href="" class="clearfix" target="_blank" data-growing-idx="34">
+                                <span class="ver-border"></span>定制
+                                <p class="dis-txt">互联定制 新生好物 心怡生活的起点</p>
+                                <img src="" alt="定制" title="定制">
+                                <span class="link-btn">立即定制</span>
+                            </a>
+                        </div>
+                        <div class="chn-bot-cover clearfix">
+                            <div class="chn-cover-col">
+                                <a href="" alt="海尔 彩电 LU55H81" title="海尔 彩电 LU55H81"></a>
+                            </div>
+                            <div class="chn-cover-col">
+                                <a href="" target="_blank" data-growing-idx="46"><img src="" alt="海尔 波轮洗衣机" title="海尔 波轮洗衣机"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chn-col hlp-chos">
+                    <div class="mod-hd">
+                        <h2 class="tit">
+                            <span>帮您选</span>
+                        </h2>
+                    </div>
+                    <div class="mod-bd">
+                        <div class="link-block-wrap link-block3">
+                            <div class="fake-border-v"></div>
+                            <div class="fake-border-h"></div>
+                            <a href="" class="" target="_blank">
+                                海尔社区
+                                <p class="dis-txt">参与话题讨论 赢取精美好礼 </p>
+                                <img src="" alt="海尔社区" title="海尔社区">
+                            </a>
+                            <a href="" class="" target="_blank">
+                                会员俱乐部
+                                <p class="dis-txt">会员福利 给您家人般的关怀</p>
+                                <img src="" alt="会员俱乐部" title="会员俱乐部">
+                            </a>
+                            <a href="" class="" target="_blank">
+                                知识堂
+                                <p class="dis-txt">了解家电的正确使用方法</p>
+                                <img src="" alt="知识堂" title="知识堂">
+                            </a>
+                            <a href="" class="" target="_blank">
+                                帮助中心
+                                <p class="dis-txt">海尔商城真诚为您服务</p>
+                                <img src="" alt="帮助中心" title="帮助中心">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第三部分优品专辑 -->
+    <div class="optimal-album-mod">
+        <div class="layout-grid">
+            <!-- 优品推荐tab切换栏 -->
+            <div class="mod-hd">
+                <h2 class="tit"><i class="optimal-ico tit-ico"></i><span>优品专辑</span></h2>
+                <ul class="clearfix album-tab">
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-2"></i> 洗衣机
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item active">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-1"></i> 冰箱
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-4"></i> 空调
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-3"></i> 彩电
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-5"></i> 热水器
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-6"></i> 厨电
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-8"></i> 冷柜
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="tab-item">
+                        <a href="javascript:;" class="a-album" target="_blank" rel="nofollow">
+                            <i class="album-ico cl-ico-7"></i> 生活家电
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod-bd">
+                <div class="optimal-panel clearfix fg-panel" style="display: block;">
+                    <div class="album-cover entry-anim">
+                        <a href="javascript:;" target="_blank" data-growing-idx="100" rel="nofollow">
+                            <img src="">
+                        </a>
+                    </div>
+                    <div class="optimal-list">
+                        <div class="fake-border-h fh_1"></div>
+                        <div class="fake-border-h fh_2"></div>
+                        <div class="fake-border-h fh_3"></div>
+                        <div class="fake-border-v"></div>
+                        <ul>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="201">
+                                    <span class="dis-txt" title="8公斤智能洗烘一体">8公斤智能洗烘一体</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>3099.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="201" rel="nofollow">
+
+                                    <img src="" alt="8公斤智能洗烘一体">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="202">
+                                    <span class="dis-txt" title="8公斤iMate8智能变频滚筒洗衣机">8公斤iMate8智能变频滚筒洗衣机</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>2499.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="202" rel="nofollow">
+
+                                    <img src="" alt="8公斤iMate8智能变频滚筒洗衣机">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="203">
+                                    <span class="dis-txt" title="8公斤变频双动力波轮洗衣机">8公斤变频双动力波轮洗衣机</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>2999.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="203" rel="nofollow">
+
+                                    <img src="" alt="8公斤变频双动力波轮洗衣机">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="204">
+                                    <span class="dis-txt" title="9公斤直驱变频波轮洗衣机">9公斤直驱变频波轮洗衣机</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>1799.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="204" rel="nofollow">
+
+                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2018/09/9b5128463c8e492bb30ff9538f8a5a82.jpg" alt="9公斤直驱变频波轮洗衣机">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="205">
+                                    <span class="dis-txt" title="10公斤直驱变频滚筒">10公斤直驱变频滚筒</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>5499.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="205" rel="nofollow">
+
+                                    <img src="" alt="10公斤直驱变频滚筒">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="206">
+                                    <span class="dis-txt" title="10公斤洗烘一体变频滚筒洗衣机">10公斤洗烘一体变频滚筒洗衣机</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>4099.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="206" rel="nofollow">
+
+                                    <img src="" alt="10公斤洗烘一体变频滚筒洗衣机">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="207">
+                                    <span class="dis-txt" title="10公斤幂级水流智能波轮">10公斤幂级水流智能波轮</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>2099.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="207" rel="nofollow">
+
+                                    <img src="" alt="10公斤幂级水流智能波轮">
+                                </a>
+                            </li>
+                            <li class="optimal-item">
+                                <a href="javascript:;" target="_blank" data-growing-idx="208">
+                                    <span class="dis-txt" title="10公斤大容量变频滚筒洗衣机">10公斤大容量变频滚筒洗衣机</span>
+                                </a>
+                                <span class="mod-price"><i>￥</i>2199.00</span>
+                                <a href="javascript:;" class="lf-anim" target="_blank" data-growing-idx="208" rel="nofollow">
+
+                                    <img src="" alt="10公斤大容量变频滚筒洗衣机">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第四部分大家都在说 -->
+    <div class="topic-saying-mod">
+        <div class="layout-grid">
+            <div class="mod-hd">
+                <h2 class="tit">
+                    <i class="tps-ico tit-ico"></i>
+                    <span>大家都在说</span>
+                </h2>
+            </div>
+            <div class="mod-bd">
+                <div class="topic-wrap">
+                    <span class="scroll-btn sc-prev"></span>
+                    <span class="scroll-btn sc-next"></span>
+                    <div class="j_tps sc-slider">
+                        <ul class="topic-list clearfix" style="width: 1800px;">
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2018/09/ed9033d4e7a94b7c90ebb997789ebb4d.png" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">LU55C51</span>
+                                        <span class="mod-price"><i>￥</i>2199.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="太物有所值，物流很周到，送货上门并安装到位，现在网上购物越来越放心了！">
+                                        太物有所值，物流很周到，送货上门并安装到位，现在网上购物越来越放心了！
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2019-06-10 </span></p>
+                            </li>
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">KFR-72LW/22HBA22AU1套机 3匹瑶光自清洁智能空调/二级能效/节能省电</span>
+                                        <span class="mod-price"><i>￥</i>6399.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="非常满意，高端大气上档次">
+                                        非常满意，高端大气上档次
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2018-09-15 </span></p>
+                            </li>
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">集成灶JE9C天然气/4.2KW/4合一</span>
+                                        <span class="mod-price"><i>￥</i>6299.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="非常满意 海尔产品信得过 顺逛商城服务好">
+                                        非常满意 海尔产品信得过 顺逛商城服务好
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2018-09-05 </span></p>
+                            </li>
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">EC6002-MC3 60升储水式恒温家用电热水器</span>
+                                        <span class="mod-price"><i>￥</i>1149.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="家里边用的全是海尔的产品，非常的不错，这次给老家在网上订了一个，师傅中午的时候到的，问他还没有吃饭，我让他先去吃饭再安装，师傅很有礼貌的说干完了再去吃饭，我给他倒水也不喝，直到安装调试好。海尔的产品真心的好，也为师傅的辛苦点赞">
+                                        家里边用的全是海尔的产品，非常的不错，这次给老家在网上订了一个，师傅中午的时候到的，问他还没有吃饭，我让他先去吃饭再安装，师傅很有礼貌的说干完了再去吃饭，我给他倒水也不喝，直到安装调试好。海尔的产品真心的好，也为师傅的辛苦点赞
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2018-09-13 </span></p>
+                            </li>
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">EG10014BD959WU1 10公斤直驱变频滚筒洗衣机</span>
+                                        <span class="mod-price"><i>￥</i>4599.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="很好的一次购物体验，送货快安装服务非常到位">
+                                        很好的一次购物体验，送货快安装服务非常到位
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2018-08-18 </span></p>
+                            </li>
+                            <li class="topic-s-item">
+                                <a href="javascript:;" class="tps-img" target="_blank">
+                                    <img src="" class="tps-simg" alt="" width="290" height="250">
+                                </a>
+                                <a href="javascript:;" class="tps-link" target="_blank">
+                                    <div class="link-wrap">
+                                        <span class="link-txt">BCD-470WDPG 470升十字对开变频静音节能干湿分储电冰箱</span>
+                                        <span class="mod-price"><i>￥</i>4799.00</span>
+                                    </div>
+                                    <p class="dis-txt" title="价廉物美！大品牌！售后服务好！用着放心！！！">
+                                        价廉物美！大品牌！售后服务好！用着放心！！！
+                                    </p>
+                                </a>
+                                <p class="align-right"><span class="mark-gray">2018-09-12 </span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第五部分为你推荐 -->
+    <div class="recommend-mod">
+        <div class="layout-grid">
+            <div class="mod-hd">
+                <h2 class="tit">
+                    <i class="recom-ico tit-ico"></i>
+                    <span>为您推荐</span>
+                </h2>
+            </div>
+            <div class="mod-bd">
+                <ul class="product-dis clearfix">
+                    <li class="ud-anim">
+                        <a href="=javascript:;" class="dis-link" target="_blank">
+                            <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/indexmanagcontroller/image/2018/11/f79ae32e6553477b9e2b34037258f159.jpg" width="160" height="160" alt="海尔先行者挂式空调 1.5匹变频挂机 一级能效 节能省电 内外机自清洁 呼吸健康空调 PID双温差联动变频技术 精准控温 升级PMV 畅享便捷舒适生活 可控电辅热 制热更强劲">
+                        </a>
+                        <a href="=javascript:;" class="dis-txt" target="_blank" data-growing-idx="1">海尔先行者挂式空调 1.5匹变频挂机
+                            一级能效 节能省电 内外机自清洁 呼吸健康空调 PID双温差联动变频技术 精准控温 升级PMV 畅享便捷舒适生活 可控电辅热 制热更强劲</a>
+                        <p class="dis-price">
+                            <span class="mod-price"><i>￥</i><span>2999.00</span></span>
+                        </p>
+                    </li>
+                    <li class="ud-anim">
+                        <a href="=javascript:;" class="dis-link" target="_blank" data-growing-idx="2" rel="nofollow">
+                            <img src="" width="160" height="160" alt="海尔先行者柜式空调 3匹变频柜机 专利自清洁 呼吸健康空气 一级能效 节能省电 一键PMV舒适便捷 多维立体送风更舒适 品质压缩机强劲节能 智能WIFI互联 轻松操控">
+                        </a>
+                        <a href="=javascript:;" class="dis-txt" target="_blank" data-growing-idx="2">海尔先行者柜式空调 3匹变频柜机
+                            专利自清洁 呼吸健康空气 一级能效 节能省电 一键PMV舒适便捷 多维立体送风更舒适 品质压缩机强劲节能 智能WIFI互联 轻松操控</a>
+                        <p class="dis-price">
+                            <span class="mod-price"><i>￥</i><span>6999.00</span></span>
+                        </p>
+                    </li>
+                    <li class="ud-anim">
+                        <a href="=javascript:;" class="dis-link" target="_blank" data-growing-idx="3" rel="nofollow">
+                            <img src="" width="160" height="160" alt="10公斤直驱变频滚筒洗衣机">
+                        </a>
+                        <a href="=javascript:;" class="dis-txt" target="_blank" data-growing-idx="3">10公斤直驱变频滚筒洗衣机</a>
+                        <p class="dis-price">
+                            <span class="mod-price"><i>￥</i><span>5499.00</span></span>
+                        </p>
+                    </li>
+                    <li class="ud-anim">
+                        <a href="=javascript:;" class="dis-link" target="_blank" data-growing-idx="4" rel="nofollow">
+                            <img src="" width="160" height="160" alt="55英寸4K超高清曲面电视，OD20纤薄机身，语音遥控，蓝牙连接">
+                        </a>
+                        <a href="=javascript:;" class="dis-txt" target="_blank" data-growing-idx="4">55英寸4K超高清曲面电视，OD20纤薄机身，语音遥控，蓝牙连接</a>
+                        <p class="dis-price">
+                            <span class="mod-price"><i>￥</i><span>2599.00</span></span>
+                        </p>
+                    </li>
+                    <li class="ud-anim">
+                        <a href="=javascript:;" class="dis-link" target="_blank" data-growing-idx="5" rel="nofollow">
+                            <img src="" width="160" height="160" alt="535升变频风冷大容量对开门冰箱">
+                        </a>
+                        <a href="=javascript:;" class="dis-txt" target="_blank" data-growing-idx="5">535升变频风冷大容量对开门冰箱</a>
+                        <p class="dis-price">
+                            <span class="mod-price"><i>￥</i><span>3699.00</span></span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部信息 -->
+    <div class="footer-mod">
+        <div class="layout-grid">
+            <div class="all-promise">
+                <ul class="ul-all-promise clearfix">
+                    <li class="promise-item li-promise-1">
+                        <a href="javascript:;" target="_blank">
+                            <i class="ico"></i>
+                            <span class="btm-survico">24小时限时达</span>
+                            <p>全国1300个县支持24小时内送货上门</p>
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="promise-item li-promise-2">
+                        <a href="javascript:;" target="_blank">
+                            <i class="ico"></i>
+                            <span class="btm-survico">按时送达 超时免单</span>
+                            <p>全国1081个县支持按约送达 超时免单</p>
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="promise-item li-promise-3">
+                        <a href="javascript:;" target="_blank">
+                            <i class="ico"></i>
+                            <span class="btm-survico">15天包退换</span>
+                            <p>产品售出15日内可免费退换货</p>
+                        </a>
+                        <span class="links-ver"></span>
+                    </li>
+                    <li class="promise-item li-promise-4">
+                        <a href="javascript:;" target="_blank">
+                            <i class="ico"></i>
+                            <span class="btm-survico">货到付款</span>
+                            <p>全国2076个区县支持货到付款</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="service-wrap clearfix">
+                <div class="service-help">
+                    <span class="links-ver"></span>
+                    <dl class="help-item">
+                        <dt>购物指南</dt>
+                        <dd><a href="javascript:;" target="_blank">注册登录</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">密码相关</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">购物流程</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">交易条款</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">品牌大全</a>
+                        </dd>
+                    </dl>
+                    <dl class="help-item">
+                        <dt>支付方式</dt>
+                        <dd><a href="javascript:;" target="_blank">货到付款</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">网银支付</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">发票说明</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">电子发票</a>
+                        </dd>
+                    </dl>
+                    <dl class="help-item">
+                        <dt>物流配送</dt>
+                        <dd><a href="javascript:;" target="_blank">日日顺配送</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">配送服务查询</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">全场免运费</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">送装同步</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">送货入户 违约赔付</a>
+                        </dd>
+                    </dl>
+                    <dl class="help-item">
+                        <dt>售后服务</dt>
+                        <dd><a href="javascript:;" target="_blank">售后服务政策</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">退换货说明</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">安装/维修</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">服务时效承诺</a>
+                        </dd>
+                        <dd><a class="a-openKF" href="#">咨询投诉</a></dd>
+                    </dl>
+                    <dl class="help-item">
+                        <dt>特色服务</dt>
+                        <dd><a href="javascript:;" target="_blank">价格保护</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">延迟发货赔付</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">按约送达 超时免单</a>
+                        </dd>
+                        <dd><a href="javascript:;" target="_blank">24小时限时达</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="about-inf">
+                    <a href="javascript:;" class="kf-btn ft-btn a-openKF"><i class="ico"></i>在线客服</a>
+                    <div class="bottom-qr clearfix">
+                        <span><img src="./img/qr_dy.jpg" width="110" height="110"><br>订阅号</span>
+                        <span><img src="./img/qr_fw.jpg" width="110" height="110"><br>服务号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权信息声明 -->
+    <div class="copyright-mod">
+        <div class="layout-grid">
+            <div class="a-links">
+                <a href="javascript:;">关于海尔</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" target="_blank">售后服务</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" class="a-openKF">投诉建议</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" target="_blank">友情链接</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" target="_blank">联系我们</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" target="_blank">顺逛用户服务协议</a>
+                <span class="links-ver"></span>
+                <a href="javascript:;" target="_blank">隐私权政策</a>
+            </div>
+            <p class="">网站备案/许可证号：
+                <a rel="nofollow" ref="ixv5-9-9ft-5-0" href="javascript:;" target="_blank">鲁ICP备09096283号</a>
+                <a rel="nofollow" ref="ixv5-9-9ft-5-0" href="javascript:;" target="_blank">
+                    <img src="" style="width:16px; vertical-align:text-bottom; margin:0 5px 0;">鲁公网安备37021202000654号
+                </a>
+            </p>
+            <p class="">Copyright©2000-2018 海尔集团电子商务有限公司 All Rights Reserved</p>
+            <p class="p-all-honor">
+                <a rel="nofollow" ref="ixv5-9-9ft-5-0" href="javascript:;" target="_blank">
+                    <img width="108" height="40" alt="" src="./img/btm-pic1.png">
+                </a>
+                <img width="122" height="40" alt="" src="./img/btm-pic2.png">
+                <a rel="nofollow" ref="ixv5-9-9ft-5-2" href="javascript:;" target="_blank">
+                    <img width="141" height="40" alt="" src="./img/btm-pic3.png">
+                </a>
+                <a rel="nofollow" ref="ixv5-9-9ft-5-6" href="javascript:;" target="_blank">
+                    <img width="107" height="40" alt="品牌官网" src="./img/btm-pic4.jpg">
+                </a>
+                <a rel="nofollow" ref="ixv5-9-9ft-5-7" href="javascript:;" target="_blank">
+                    <img width="109" height="40" alt="海尔商城-官网认证结果及安装电子标识" src="./img/btm-pic5.jpg">
+                </a>
+            </p>
         </div>
     </div>
 </body>

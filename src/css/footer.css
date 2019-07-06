@@ -1,0 +1,189 @@
+@charset "utf-8";
+.footer-mod {
+    margin-bottom: 20px;
+    background-color: #fff
+}
+
+.footer-mod .ul-all-promise {
+    width: 100%;
+    padding: 35px 0 25px;
+    border-bottom: 1px #eaeaea solid
+}
+
+.footer-mod .promise-item {
+    width: 25%;
+    position: relative;
+    float: left
+}
+
+.footer-mod .promise-item a {
+    display: block;
+    padding-left: 25px
+}
+
+.footer-mod .promise-item a p {
+    color: #999
+}
+
+.footer-mod .promise-item .ico {
+    background-position-y: -444px;
+    width: 43px;
+    height: 43px;
+    float: left;
+    margin-right: 5px
+}
+
+.footer-mod .promise-item .btm-survico {
+    margin-bottom: 3px;
+    color: #333;
+    font-weight: 400
+}
+
+.footer-mod .promise-item .links-ver {
+    position: absolute;
+    right: 0;
+    height: 33px;
+    vertical-align: middle;
+    margin: 0;
+    top: 3px;
+    background-color: #eaeaea
+}
+
+.footer-mod .li-promise-2 .ico {
+    background-position-x: -50px
+}
+
+.footer-mod .li-promise-3 .ico {
+    background-position-x: -97px
+}
+
+.footer-mod .li-promise-4 .ico {
+    background-position-x: -144px
+}
+
+.footer-mod .service-wrap {
+    padding: 20px 0 40px
+}
+
+.footer-mod .service-help {
+    float: left;
+    width: 73%;
+    position: relative;
+    padding-left: 2%
+}
+
+.footer-mod .service-help .links-ver {
+    position: absolute;
+    background-color: #eaeaea;
+    height: 170px;
+    right: 0;
+    top: 7px;
+    margin: 0
+}
+
+.footer-mod .help-item {
+    float: left;
+    width: 20%
+}
+
+.footer-mod .help-item dt {
+    color: #333;
+    margin-bottom: 18px
+}
+
+.footer-mod .help-item dd {
+    line-height: 22px
+}
+
+.footer-mod .help-item dd a {
+    color: #999
+}
+
+.footer-mod .help-item dd a:hover {
+    color: #2979ff
+}
+
+.footer-mod .about-inf {
+    float: left;
+    width: 24%;
+    padding: 5px 0 0
+}
+
+.footer-mod .about-inf .ft-btn {
+    display: block;
+    width: 128px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 15px 20px;
+    border: 1px solid #eaeaea;
+    position: relative
+}
+
+.footer-mod .about-inf .ft-btn .ico {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 6px
+}
+
+.footer-mod .about-inf .ft-btn .img-wechat {
+    position: absolute;
+    z-index: 100;
+    top: 29px;
+    left: 0;
+    display: none
+}
+
+.footer-mod .about-inf .wx-btn .ico {
+    background-position: -101px -201px
+}
+
+.footer-mod .about-inf .wx-btn:hover .img-wechat {
+    display: block
+}
+
+.footer-mod .about-inf .kf-btn .ico {
+    background-position: -72px -201px
+}
+
+.bottom-qr {
+    padding: 0 0 0 10px;
+}
+
+.bottom-qr span {
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    color: #333;
+}
+
+
+/* 版权信息声明 */
+
+.copyright-mod {
+    padding-bottom: 15px
+}
+
+.copyright-mod .a-links {
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.copyright-mod .a-links .links-ver {
+    background-color: #c7c7c7;
+    margin: 0 6px
+}
+
+.copyright-mod p {
+    margin: 6px 0;
+    text-align: center;
+    color: #999
+}
+
+.copyright-mod .p-all-honor {
+    margin-top: 36px
+}
+
+.copyright-mod .p-all-honor a {
+    margin: 0 6px
+}

@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/* 重置部分标签样式 */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+tt,
+u,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em
+}
+
+textarea {
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif
+}
+
+a,
+body {
+    color: #666
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+button {
+    border: 0;
+    background: 0 0;
+    cursor: pointer
+}
+
+a:hover {
+    color: #2979ff
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
+    background: #f6f6f6!important
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: " ";
+    font-size: 0
+}
+
+
+/* 共用类名 */
+
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.mark-blue {
+    color: #2979ff
+}
+
+.mark-gray {
+    color: #999
+}
+
+.head-wrap .hot-words {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.dis-txt,
+.nav_main .panel_recommend_right .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.links-ver {
+    overflow: hidden;
+    margin: 12px 10px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #999
+}
+
+.dis-txt {
+    height: 36px
+}
+
+.fake-border-h,
+.fake-border-v {
+    position: absolute;
+    background-color: #eaeaea;
+    z-index: 10;
+    overflow: hidden
+}
+
+.fake-border-h {
+    width: 1px;
+    height: 100%
+}
+
+.fake-border-v {
+    height: 1px;
+    width: 100%
+}
+
+.mod-price {
+    font-size: 14px;
+    color: #ff4949
+}
+
+.mod-price i {
+    font-family: arial;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.layout-grid {
+    margin: 0 auto;
+    width: 1190px
+}
+
+.fd-right {
+    float: right
+}
+
+
+/* 首页用到的所有图标 */
+
+.a-tip-servicer,
+.ehaier-inf .grid-ud a i,
+.ehaier-inf .service-inf li .ico,
+.mod-hd .tit-ico,
+.footer-mod .about-inf .ft-btn .ico,
+.footer-mod .promise-item .ico,
+.head-wrap .cart-empty-tip .empty-ico,
+.head-wrap .mini-cart .cart-ico,
+.head-wrap .search-form .btn-search,
+.icon_v2,
+.nav-bar .cate-ico,
+.nav-bar .ul-nav i,
+.so-popbox .s-sopop-close,
+.top-bar .location-wrap .ico,
+.topbox-close,
+a.a-backtop {
+    background-image: url(../img/index_new_icos.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.a-tip-servicer,
+.ehaier-inf .grid-ud a i,
+.ehaier-inf .service-inf li .ico,
+.mod-hd .tit-ico,
+.btn-small,
+.footer-mod .about-inf .ft-btn .ico,
+.footer-mod .promise-item .ico,
+.head-wrap .cart-empty-tip .empty-ico,
+.head-wrap .mini-cart .cart-ico,
+.head-wrap .search-form .btn-search,
+.icon_v2,
+.inlineBlock,
+.links-ver,
+.nav-bar .cate-ico,
+.nav-bar .ul-nav i,
+.so-popbox .s-sopop-close,
+.top-bar .location-wrap .ico,
+.topbox-close,
+a.a-backtop {
+    display: inline-block;
+}
+
+.ehaier-inf .grid-ud a i,
+.ehaier-inf .service-inf li .ico,
+.icon_v2,
+.mod-hd .tit-ico,
+.optimal-album-mod .mod-bd .optimal-item .hot-tag,
+.optimal-album-mod .mod-hd .album-ico,
+.s-thumb-next,
+.s-thumb-prev,
+.slider-banner-mod .slider-control,
+.topic-saying-mod .mod-bd .scroll-btn,
+.xsqg-mod .product-dis li .hot-tag {
+    background-image: url(../img/index_new_icos2.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.btn-small,
+.channals-mod .ver-border,
+.ehaier-inf .grid-ud a i,
+.ehaier-inf .notice-bd a,
+.ehaier-inf .service-inf li .ico,
+.icon_v2,
+.inlineBlock,
+.links-ver,
+.mod-hd .tit-ico,
+.optimal-album-mod .mod-bd .optimal-item .hot-tag,
+.optimal-album-mod .mod-hd .alb-tit,
+.optimal-album-mod .mod-hd .album-ico,
+.p-slide-thumb .s-thumb,
+.s-thumb-next,
+.s-thumb-prev,
+.slider-banner-mod .slider-control,
+.topic-saying-mod .mod-bd .scroll-btn,
+.xsqg-mod .mod-hd .J_fstimer span,
+.xsqg-mod .product-dis li .hot-tag {
+    display: inline-block;
+}
