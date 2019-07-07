@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <!-- 购物车头部 -->
+    <div class="cart-header">
+        <div class="wrap  cart-header-wrap clearfix">
+            <div class="logo clearfix">
+                <a href="javascript:;">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <span>购物车</span>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车头部低下部分登陆 -->
+    <div class="cart-login">
+        <div class="wrap cart-login-wrap  clearfix">
+            <div class="left">
+                <span>您还没有登录&nbsp;!&nbsp;登录后购物车的商品将保存到您账号中</span>
+                <span class="login-btn">立即登录</span>
+            </div>
+            <div class="right">
+                <span>配送至 :</span>
+                <div class="location">
+                    杭州市江干区
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 加入购物车的商品信息列表 -->
+    <div class="newlist">
+        <div class="wrap form">
+            <!-- 商品信息列表头部 -->
+            <div class="form_head clearfix">
+                <li class="All_select"><input type="checkbox" id="tag_box" checked="checked">全选</li>
+                <li class="wares">商品</li>
+                <li class="show_have">货到付款</li>
+                <li class="shopping_cost">单价(元)</li>
+                <li class="quantity">数量</li>
+                <li class="isBenefit">已优惠</li>
+                <li class="Subtotal_money">小计(元)</li>
+                <li class="handle">操作</li>
+            </div>
+            <!-- 加入购物车的商品信息 -->
+            <div class="item-list clearfix">
+                <div class="list-check">
+                    <input type="checkbox">
+                </div>
+                <div class="item-info iteminfo-float">
+                    <a href="" class="item-pic">
+                        <img src="./img/details.jpg" alt="">
+                    </a>
+                    <a href="" class="item-title">
+                        <span>
+                                Haier/海尔空调KFR-35GW/03MEA81A套机
+                    </span>
+                    </a>
+                </div>
+                <div class="item-have iteminfo-float">
+                    <span>支持</span>
+                </div>
+                <div class="item-price iteminfo-float">
+                    <i>￥2999</i>
+                </div>
+                <div class="item-num iteminfo-float">
+                    <em class="em-sub">-</em>
+                    <input type="text" class="num" value="1">
+                    <em class="em-add">+</em>
+                </div>
+                <div class="item-discount iteminfo-float">
+                    <i class="color_red font_style">￥0</i>
+                </div>
+                <div class="item-money iteminfo-float">
+                    <i class="color_red font_style">￥2999</i>
+                </div>
+                <div class="item-choose iteminfo-float">
+                    <em>移入收藏夹</em><br>
+                    <strong>删除</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 购物车商品结算 -->
+    <div>
+        <div class=" cart-acount wrap">
+            <div class="select-all">
+                <p class=""><input type="checkbox" checked="checked">全选</p>
+            </div>
+            <div class="price-all">
+                <a class="color_red font_style all-num">1</a> 件 订单总计：
+                <a class="color_red font_style all-price">￥2999</a>
+                <a class="money-pay">立即结算</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
