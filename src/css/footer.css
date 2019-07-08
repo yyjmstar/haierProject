@@ -195,9 +195,10 @@
     width: 35px;
     position: fixed;
     bottom: 60px;
-    left: 20px;
+    right: 10px;
     display: none;
     border: 1px solid #ddd;
+    z-index: 999999
 }
 
 #sidenav ul li {

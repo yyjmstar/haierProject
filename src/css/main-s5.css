@@ -48,7 +48,9 @@
 
 .product-dis .dis-link img {
     display: block;
-    margin: 17px auto
+    margin: 17px auto;
+    width: 160px;
+    height: 160px;
 }
 
 .recommend-mod .product-dis .dis-txt {

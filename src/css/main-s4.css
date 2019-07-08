@@ -24,14 +24,14 @@
 
 .topic-saying-mod .mod-bd .topic-list {
     padding-bottom: 10px;
-    width: 3000px
 }
 
-.topic-saying-mod .mod-bd .sc-slider {
+
+/* .topic-saying-mod .mod-bd .sc-slider {
     overflow: hidden;
     width: 1190px;
     height: 374px
-}
+} */
 
 .topic-saying-mod .mod-bd .scroll-btn {
     top: 120px;
@@ -40,6 +40,11 @@
     position: absolute;
     z-index: 100;
     cursor: pointer
+}
+
+.topic-saying-mod .topic-list .tps-img img {
+    width: 290px;
+    height: 250px;
 }
 
 .backBtn,
@@ -59,7 +64,6 @@
 }
 
 .topic-saying-mod .mod-bd .topic-s-item {
-    transition: height linear .3s;
     margin-right: 10px;
     float: left;
     width: 290px;
@@ -81,7 +85,8 @@
 
 .topic-saying-mod .mod-bd .tps-link .dis-txt {
     color: #333;
-    margin: 10px 0
+    margin: 10px 0;
+    height: 40px;
 }
 
 .topic-saying-mod .mod-bd .tps-link:hover .dis-txt,
@@ -109,5 +114,6 @@
 
 .topic-saying-mod .mod-bd .align-right {
     padding: 0 10px;
-    line-height: 24px
+    line-height: 24px;
+    text-align: right;
 }

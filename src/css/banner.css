@@ -32,7 +32,6 @@
     position: absolute;
     left: 0;
     height: 430px;
-    . overflow: hidden
 }
 
 .nav_main .nav_wrap {
@@ -41,7 +40,6 @@
     box-sizing: border-box;
     padding: 15px 0;
     background: rgba(0, 0, 0, .6);
-    filter: progid: DXImageTransform.Microsoft.gradient(startcolorstr=#9F000000, endcolorstr=#9F000000);
     cursor: pointer
 }
 
@@ -60,6 +58,14 @@
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
+}
+
+.nav_main .nav_ul .bgcolor_change {
+    background: rgba(245, 245, 245, 0.7);
+}
+
+.nav_main .nav_ul .fontcolor_change {
+    color: rgb(0, 0, 0)
 }
 
 .nav_main .nav_ul li a {
@@ -91,14 +97,12 @@
 /* 商品侧边栏鼠标悬浮出现的部分 */
 
 .nav-side-item {
-    position: absolute;
     height: 430px;
-    width: 447px;
+    width: 0px;
     position: absolute;
     left: 192px;
     top: 0;
     overflow: hidden;
-    display: none
 }
 
 .nav-side-item .left,
@@ -254,7 +258,7 @@
 }
 
 .pb-main .banner-wrap {
-    width: 952px
+    width: 951px
 }
 
 .fd-left {
@@ -264,18 +268,77 @@
 .main-banner {
     overflow: hidden;
     width: 100%;
-    height: 430px
+    height: 430px;
+    position: relative;
 }
 
-.banner-slidewrap,
+.banner-pic,
 .main-banner {
     position: relative
 }
 
-.banner-slidewrap {
+.banner-pic {
     left: 0;
     width: 100%;
-    height: 430px
+    height: 430px;
+    position: absolute;
+}
+
+.banner-pic li {
+    float: left;
+    width: 951px;
+}
+
+.main-banner .banner-btn {
+    left: 50%;
+    margin-left: -55px;
+    height: 15px;
+    text-align: center;
+    bottom: 10px;
+    padding: 1px 15px 2px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+}
+
+.main-banner .banner-btn .banner-active {
+    background: #ff4949;
+}
+
+.main-banner .banner-btn li {
+    overflow: hidden;
+    margin: 1px 5px 0;
+    width: 12px;
+    height: 12px;
+    background: #b6b6b6;
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+}
+
+.main-banner .left,
+.main-banner .right {
+    position: absolute;
+    font-size: 20px;
+    width: 20px;
+    height: 60px;
+    opacity: .85;
+    filter: alpha(opacity=85);
+    cursor: pointer;
+    top: 50%;
+    margin-top: -30px;
+    display: none;
+    background: url(../img/index_new_icos.png) no-repeat
+}
+
+.main-banner .left {
+    left: 210px;
+    background-position: -125px -31px
+}
+
+.main-banner .right {
+    right: 20px;
+    background-position: -158px -31px
 }
 
 
