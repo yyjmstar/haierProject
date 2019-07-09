@@ -180,10 +180,10 @@
     left: 0;
     overflow: hidden;
     width: 538px;
+    max-height: 153px;
     border: 1px solid #f2f2f2;
     background: #fff;
-    z-index: 10;
-    display: none
+    z-index: 999999;
 }
 
 .head-wrap .ul-searchKeyList li {
@@ -192,6 +192,10 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+}
+
+.head-wrap .ul-searchKeyList li:hover {
+    background: #e3e3e3
 }
 
 .head-wrap .ul-searchKeyList .li-searchKeyOver {

@@ -24,14 +24,14 @@
 
 .topic-saying-mod .mod-bd .topic-list {
     padding-bottom: 10px;
+    position: absolute;
 }
 
-
-/* .topic-saying-mod .mod-bd .sc-slider {
+.topic-saying-mod .mod-bd .sc-slider {
     overflow: hidden;
     width: 1190px;
     height: 374px
-} */
+}
 
 .topic-saying-mod .mod-bd .scroll-btn {
     top: 120px;

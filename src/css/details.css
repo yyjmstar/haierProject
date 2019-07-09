@@ -52,33 +52,73 @@
     .details .item-pic {
         float: left;
         width: 384px;
+        position: relative;
     }
     
     .details .item-bpic {
         border: 1px solid #ddd;
-        width: 382px;
-        height: 405px;
-        padding-top: 1px;
+        width: 380px;
+        height: 380px;
+        padding: 1px;
         text-align: center;
         font-size: 0em;
+        position: relative;
     }
     
     .details .item-bpic img {
         border: 0;
-        vertical-align: middle;
         width: 380px;
         height: 380px;
+        display: block;
+    }
+    
+    .item-bpic .sf {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        background: yellow;
+        top: 0;
+        opacity: 0.3;
+        border: 1px solid rgba(233, 23, 23, 0.5);
+    }
+    
+    .item-pic .df {
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        padding: 1px;
+        border: 1px solid #ccc;
+        left: 400px;
+        top: 0;
+        display: none;
+        overflow: hidden;
+        z-index: 111111111
     }
     
     .item-piclist {
         padding: 15px 29px 0;
         width: 325px;
         position: relative;
+        height: 70px
+    }
+    
+    .bpic {
+        width: 780px;
+        height: 780px;
+        position: absolute;
+    }
+    
+    .piclist-all {
+        position: relative;
+        height: 70px;
+        overflow: hidden
     }
     
     .piclist-all ul {
+        position: absolute;
         overflow: hidden;
         width: 325px;
+        height: 70px
     }
     
     .lists {
@@ -114,9 +154,17 @@
         background-position: -1px -95px;
     }
     
+    .item-piclist .left:hover {
+        background-position: -30px -95px;
+    }
+    
     .item-piclist .right {
         right: 0;
         background-position: 3px -145px
+    }
+    
+    .item-piclist .right:hover {
+        background-position: -24px -145px;
     }
     /* 右边 */
     

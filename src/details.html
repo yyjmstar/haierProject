@@ -7,49 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="css/top-header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+    <!-- 头部引入 -->
     <div class="top-bar"></div>
+    <div class="head-wrap">
+        <div class="layout-grid"></div>
+    </div>
+    <div class="nav-bar clearfix">
+        <div class="layout-grid">
+            <div class="category-mod">
+                <a href="javascript:;" class="category-hd" target="_blank">
+                    <span class="cate-tit">商品分类</span><i class="cate-ico"></i>
+                </a>
+                <div class="nav_main " style="width: 192px;display:none">
+                    <div class="nav_wrap">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $('.top-bar').load('index1.html .bar-wrap');
+        $('.head-wrap .layout-grid').load('index1.html .search-mod');
+        $('.nav-bar .nav_wrap').load('index1.html .nav_ul')
+        $('.nav-bar .layout-grid').load('index1.html .layout-grid .ul-nav')
     </script>
 
-    <div class="wrapper clearfix">
+    <!-- 详情页主体 -->
+    <div class="wrapper clearfix" style="margin-top:50px">
         <div class="details clearfix">
             <div class="item-pic">
                 <div class="item-bpic">
-                    <img src="./img/details.jpg" alt="">
+                    <img src="" alt="">
+                    <div class="sf"></div>
+                </div>
+                <div class="df">
+                    <img class="bpic" src="" alt="">
                 </div>
                 <div class="item-piclist">
                     <div class="piclist-all">
-                        <ul>
-                            <li class="lists">
-                                <a href="">
-                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/productchangeactivitycontroller/image/2018/12/4c1140b0ceee4703bb0450fb8b5342bb.jpg@53_53" alt="">
-                                </a>
-                            </li>
-                            <li class="lists">
-                                <a href="">
-                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/productchangeactivitycontroller/image/2018/12/4c1140b0ceee4703bb0450fb8b5342bb.jpg@53_53" alt="">
-                                </a>
-                            </li>
-                            <li class="lists">
-                                <a href="">
-                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/productchangeactivitycontroller/image/2018/12/4c1140b0ceee4703bb0450fb8b5342bb.jpg@53_53" alt="">
-                                </a>
-                            </li>
-                            <li class="lists">
-                                <a href="">
-                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/productchangeactivitycontroller/image/2018/12/4c1140b0ceee4703bb0450fb8b5342bb.jpg@53_53" alt="">
-                                </a>
-                            </li>
-                            <li class="lists">
-                                <a href="">
-                                    <img src="http://cdn50.ehaier.com/shoppingmall-admin-web/productchangeactivitycontroller/image/2018/12/4c1140b0ceee4703bb0450fb8b5342bb.jpg@53_53" alt="">
-                                </a>
-                            </li>
+                        <ul class="clearfix">
                         </ul>
                     </div>
                     <i class="left"></i>
@@ -58,9 +63,9 @@
             </div>
             <div class="item-info">
                 <h1 class="item-title">
-                    Haier/海尔 滚筒洗衣机 EG10014BD979GU1</h1>
+                </h1>
                 <h2 class="item-activity">【限时抢购】活动时间7月6日20:00-7月6日24:00，到手价不高于4499元！</h2>
-                <h2 class="item-function">海尔10公斤直驱变频滚筒洗衣机 斐雪派克电机 巴氏杀菌 双喷淋 智能投放 云物联</h2>
+                <h2 class="item-function">巴氏杀菌 智能投放 云物联</h2>
                 <ul class="item-info-list">
                     <li>
                         <span class="title">分&nbsp;期&nbsp;付：</span>
@@ -68,7 +73,7 @@
                     </li>
                     <li>
                         <span class="title">商&nbsp;城&nbsp;价：</span>
-                        <b class="price">￥3555</b>
+                        <b class="price"></b>
                     </li>
                     <li>
                         <span class="title">已&nbsp;售&nbsp;出：</span>
@@ -110,6 +115,19 @@
             </div>
         </div>
     </div>
+    <!-- 底部引入 -->
+    <div class="footer-mod" style="margin-top:80px">
+        <div class="layout-grid"></div>
+    </div>
+    <div class="copyright-mod">
+        <div class="layout-grid"></div>
+    </div>
+    <script>
+        $('.footer-mod .layout-grid ').load('index1.html .footer-mod .layout-grid ')
+        $('.copyright-mod .layout-grid ').load('index1.html .copyright-mod .layout-grid ')
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/js/index.js"></script>
 </body>
 
 </html>
