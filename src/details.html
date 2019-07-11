@@ -31,18 +31,47 @@
                     </div>
                 </div>
             </div>
+            <ul class="ul-nav">
+                <li>
+                    <a href="javascript:;" target="_blank">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">抢鲜购</a>
+                    <i class="ico-new"></i>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">领券中心</a>
+                    <i class="ico-hot"></i>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">会员</a>
+                    <i class="ico-vip"></i>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">社区</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">线下体验店</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">3D云设计</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">有好货</a>
+                    <i class="ico-hot"></i>
+                </li>
+            </ul>
         </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $('.top-bar').load('index1.html .bar-wrap');
         $('.head-wrap .layout-grid').load('index1.html .search-mod');
-        $('.nav-bar .nav_wrap').load('index1.html .nav_ul')
-        $('.nav-bar .layout-grid').load('index1.html .layout-grid .ul-nav')
+        $('.nav-bar .nav_wrap').load('index1.html .nav_ul');
     </script>
 
     <!-- 详情页主体 -->
-    <div class="wrapper clearfix" style="margin-top:50px">
+    <div class="wrapper cart clearfix" style="margin-top:50px">
         <div class="details clearfix">
             <div class="item-pic">
                 <div class="item-bpic">
@@ -103,14 +132,21 @@
                         <span class="buy-num">
                                 <em class="em-sub">-</em>
                                 <input type="text" class="num" value="1">
-                                <em class="em-add">+</em>
-                            </span>
+                        <em class="em-add">+</em>
+                        </span>
                     </div>
                     <p class="p-product-btn">
                         <a class="btn-buy" href="javascript:;">立即购买</a>
                         <a class="btn-cart" href="javascript:;" id="buy_Now">加入购物车</a>
                     </p>
                     <p class="SG">顺逛商城作为全国首批电子发票试点网上商城，于2014年3月31日起全面推行<a class="txt_red" rel="nofollow" href="http://www.shunguang.com/helpcenter.php?id=57&amp;ebi=ref-ix-ft-1-a-2-5">电子发票</a></p>
+                </div>
+            </div>
+            <div class="cartclick_choose" style="display:none">
+                <div class="so-popbox pop-successCart">
+                    <h2 class="h2-sopop h2-sopop-move"><span class="s-sopop-title">加入购物车成功!</span></h2><span class="s-sopop-close">[关闭]</span>
+                    <div class="so-popbox-cont"><span class="qian"></span><span class="price"></span></div>
+                    <p class="p-so-popBtn"><a class="a-sopop-btn a-cancel" href="http://10.31.158.16/HaierProject/src/index1.html"><span class="s-sopop-btn">继续购物</span></a><a class="a-sopop-btn a-tobuy" href="http://10.31.158.16/HaierProject/src/cart.html"><span class="s-sopop-btn">去购物车结算</span></a></p>
                 </div>
             </div>
         </div>
@@ -122,12 +158,14 @@
     <div class="copyright-mod">
         <div class="layout-grid"></div>
     </div>
+    <div class="bgmask" style="height: 21435px; z-index: 1010;"></div>
     <script>
         $('.footer-mod .layout-grid ').load('index1.html .footer-mod .layout-grid ')
         $('.copyright-mod .layout-grid ').load('index1.html .copyright-mod .layout-grid ')
     </script>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./script/js/index.js"></script>
+    <script src="./script/js/jquery.cookie.js"></script>
+    <script src="./script/js/detail.js"></script>
 </body>
 
 </html>

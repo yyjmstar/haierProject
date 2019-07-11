@@ -367,150 +367,6 @@
     }
     new Hdp().init();
 }(jQuery);
-//详情页数据渲染及部分效果
-! function($) {
-    let itemid = location.search.split('?')[1].split('=')[1];
-    const $itempic = $('.item-bpic img');
-    const $itemtitle = $('.item-title');
-    const $itemprice = $('.item-info-list .price');
-    const $piclistall = $('.piclist-all ul');
-    const $bpic = $('.bpic');
-
-    const $leftarrow = $('.item-piclist .left');
-    const $rightarrow = $('.item-piclist .right');
-
-    $.ajax({
-        url: 'http://10.31.158.16/HaierProject/php/details-part3xyj.php',
-        dataType: 'json',
-        data: {
-            itemid: itemid
-        }
-    }).done(function(data) {
-        let tabpicurls = [];
-        tabpicurls = data.tabpicurls.split('，');
-        console.log(tabpicurls);
-        $itempic.attr({ src: `${data.picurl}` });
-        $bpic.attr({ src: `${data.picurl}` });
-        $itemtitle.html(`${data.title}`);
-        $itemprice.html(`${data.price}`);
-        //渲染详情页下面的tab切换列表 
-        let str = '';
-        $.each(tabpicurls, function(index, value) {
-            str += `
-            <li class="lists">
-            <a href="">
-                <img src="${value}" alt="">
-            </a>
-        </li>
-            `
-        })
-        $piclistall.append(str);
-        //鼠标悬浮放大镜下面的图片列表，放大镜中的图片改变当前鼠标悬浮的图片
-        const $piclistli = $('.piclist-all ul li');
-        $piclistli.on('mouseover', function() {
-                let imgurl = $(this).find('img').attr('src');
-                $itempic.attr({ src: imgurl });
-                $bpic.attr({ src: imgurl });
-            })
-            //点击大图下面的列表进行切换
-        let num = 5;
-        const $listli = $('.piclist-all ul li');
-        const $listliwidth = $listli.eq(0).width();
-        $piclistall.width($listliwidth * $listli.length);
-        //右键点击
-        $rightarrow.on('click', function() {
-            if ($listli.length > num) {
-                num++;
-            };
-            if ($listli.length == num) {}
-            $piclistall.stop().animate({
-                left: -(num - 5) * $listliwidth
-            })
-        });
-        //左键点击
-        $leftarrow.on('click', function() {
-            if (num > 5) {
-                num--;
-            };
-            $piclistall.stop().animate({
-                left: -(num - 5) * $listliwidth
-            })
-        });
-    });
-}(jQuery);
-//放大镜效果
-;
-! function($) {
-    //构造函数
-    function Fdj() {
-        //取元素  
-        this.itemcontainer = $('.item-bpic');
-        this.spic = $('.item-bpic img');
-        this.sf = $('.item-bpic .sf');
-        this.df = $('.df');
-        this.bpic = $('.bpic');
-        let lp = null;
-        let tp = null;
-    }
-    //原型
-    Fdj.prototype.init = function() {
-            let _this = this;
-            //鼠标移入小图，大图出现,移出消失
-            this.itemcontainer.hover(function() {
-                _this.df.show();
-                _this.sf.show();
-                _this.sfsize();
-                _this.sf.on('mousemove', function(ev) {
-                    let event = ev || window.event;
-                    _this.sfposition(event);
-                    _this.bpicposition();
-
-                })
-            }, function() {
-                _this.df.hide();
-                _this.sf.hide()
-            })
-        }
-        //将鼠标的位置给sf，让sf跟随鼠标移动
-    Fdj.prototype.sfposition = function(event) {
-            lp = event.pageX - this.itemcontainer.offset().left - this.sf.width() / 2;
-            tp = event.pageY - this.itemcontainer.offset().top - this.sf.height() / 2;
-            if (lp <= 0) {
-                lp = 0;
-            } else if (lp >= this.itemcontainer.width() - this.sf.width()) {
-                lp = this.itemcontainer.width() - this.sf.width()
-            };
-            if (tp <= 0) {
-                tp = 0;
-            } else if (tp >= this.itemcontainer.height() - this.sf.height()) {
-                tp = this.itemcontainer.height() - this.sf.height()
-            }
-            this.sf.css({
-                left: lp,
-                top: tp
-            })
-        }
-        //求小放大镜的尺寸
-    Fdj.prototype.sfsize = function() {
-            let width = this.df.width() * this.spic.width() / this.bpic.width();
-            let height = this.df.height() * this.spic.height() / this.bpic.height();
-            this.lrate = this.df.width() / this.sf.width();
-            this.trate = this.df.width() / this.sf.height();
-            this.sf.width(width);
-            this.sf.height(height);
-
-        }
-        //让大图反方向移动
-    Fdj.prototype.bpicposition = function() {
-            this.bpic.css({
-                left: -this.lrate * lp,
-                top: -this.trate * tp
-
-            })
-        }
-        //调用
-    new Fdj().init()
-}(jQuery)
 //页面小效果
 //1.搜索框效果
 ;
@@ -548,27 +404,33 @@ $('.all-search .txt-search').on('blur', function() {
 
 ;
 ! function($) {
-    const $navli = $('.nav-bar .nav_ul li');
+    const $navli = $('.nav-bar .nav_ul>li');
     const $navitem = $('.nav-bar .nav-side-item');
     //鼠标悬浮
     $navli.hover(function() {
         $(this).addClass('bgcolor_change').siblings().removeClass('bgcolor_change')
         $(this).find('a').addClass('fontcolor_change').parent().siblings().find('a').removeClass('fontcolor_change');
-        $navitem.eq($(this).index()).animate({
-            width: 447
-        })
+        $navitem.eq($(this).index()).show()
 
     }, function() {
         $(this).removeClass('bgcolor_change');
         $(this).find('a').removeClass('fontcolor_change');
-        $navitem.eq($(this).index()).animate({
-            width: 0
-        }, 1000)
+        $navitem.eq($(this).index()).hide()
+
     })
-    $navitem.hover(function() {},
-        function() {
-            $(this).animate({
-                width: 0
-            })
-        }, 1000)
 }(jQuery);
+//3.首页页面
+//为您推荐部分效果
+//获取登录成功之后，存在cookie中的用户名，显示在首页的地方
+;
+! function($) {
+    if ($.cookie('UserName')) {
+        $('.top-bar .w-login span').html($.cookie('UserName') + ',').show();
+        $('.btn-small').hide();
+    } else {
+        $('.top-bar .w-login span').hide();
+        $('.top-bar .w-login i').show();
+        $('.btn-small').show();
+    }
+
+}(jQuery)

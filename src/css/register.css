@@ -113,9 +113,11 @@ a {
 }
 
 .register-form-inner {
-    width: 320px;
-    padding: 20px 0 0 0;
-    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.register-form {
+    padding: 0 10px;
 }
 
 .register-form-inner input {
@@ -152,4 +154,10 @@ a {
     color: #fff;
     background: url(../img/shop_abtn_blue.png) no-repeat 0 -450px;
     overflow: hidden;
+}
+
+.error {
+    font-size: 12px;
+    width: 139px;
+    display: inline-block;
 }
