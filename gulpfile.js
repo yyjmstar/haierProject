@@ -1,13 +1,12 @@
 const gulp = require('gulp');
-const watch = require('gulp-watch'); //引入监听的gulp插件
 const minihtml = require('gulp-minify-html'); //引入html的压缩插件
-// const comfilesass = require('gulp-sass'); //编译sass
 const minicss = require('gulp-minify-css');
-const minijs = require('gulp-uglify');
 const babel = require('gulp-babel');
-const imagemin = require('gulp-imagemin');
 const babelcore = require('babel-core');
 const es2015 = require('babel-preset-es2015');
+const minijs = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+
 
 //压缩html
 gulp.task('uglifyhtml', function() {
@@ -41,8 +40,4 @@ gulp.task('uglifypng', () => {
             multipass: true //类型：Boolean 默认：false 多次优化svg直到完全优化
         }))
         .pipe(gulp.dest('dist/src/img'));
-});
-//监听
-gulp.task('task', function() { //default:默认名称，编译时可以省略
-    watch(['src/*.html', 'src/css/*.css', 'src/img/*.png', 'src/script/js/*.js'], gulp.parallel('uglifyhtml', 'uglifycss', 'uglifypng', 'babeljs'));
 });

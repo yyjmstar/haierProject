@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="./css/cart.css">
 </head>
 
@@ -51,6 +51,42 @@
                 <li class="handle">操作</li>
             </div>
             <!-- 加入购物车的商品信息 -->
+            <div class="item-list clearfix" style="display:none">
+                <div class="list-check iteminfo-float">
+                    <input type="checkbox">
+                </div>
+                <div class="item-info iteminfo-float">
+                    <a href="" class="item-pic">
+                        <img class="img" itemid="" src="" alt="">
+                    </a>
+                    <a href="" class="item-title">
+                        <span>
+                           
+                    </span>
+                    </a>
+                </div>
+                <div class="item-have iteminfo-float">
+                    <span>支持</span>
+                </div>
+                <div class="item-price iteminfo-float">
+                    <i></i>
+                </div>
+                <div class="item-num iteminfo-float">
+                    <em class="em-sub">-</em>
+                    <input type="text" class="num" value="1">
+                    <em class="em-add">+</em>
+                </div>
+                <div class="item-discount iteminfo-float">
+                    <i class="color_red font_style">￥0</i>
+                </div>
+                <div class="item-money iteminfo-float">
+                    <i class="color_red font_style"></i>
+                </div>
+                <div class="item-choose iteminfo-float">
+                    <em>移入收藏夹</em><br>
+                    <strong>删除</strong>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 购物车商品结算 -->
@@ -60,14 +96,14 @@
                 <p class=""><input type="checkbox" checked="checked">全选</p>
             </div>
             <div class="price-all">
-                <a class="color_red font_style all-num">1</a> 件 订单总计：
-                <a class="color_red font_style all-price">￥<span>2999</span></a>
+                <a class="color_red font_style all-num">0</a> 件 订单总计：
+                <a class="color_red font_style all-price">￥<span>0</span></a>
                 <a class="money-pay">立即结算</a>
             </div>
         </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./script/js/jquery.cookie.js"></script>
+    <script src="./script/thirdplugins/jquery.cookie.js"></script>
     <script src="./script/js/cart.js"></script>
 </body>
 

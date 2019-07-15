@@ -370,35 +370,33 @@
 //页面小效果
 //1.搜索框效果
 ;
-// ! function($) {
-function haier(data) {
-    const $searchul = $('.ul-searchKeyList');
-    let arr = data.data;
-    let str = '';
-    $.each(arr, function(index, data) {
-        str += `
+! function($) {
+    function haier(data) {
+        const $searchul = $('.ul-searchKeyList');
+        let arr = data.data;
+        let str = '';
+        $.each(arr, function(index, data) {
+            str += `
             <li class="li-searchKey">
             <a href="http://search.shunguang.com/s?k=${value.smartWord}">
             <span class="s-keyword">${value.smartWord}</span><span class="s-keyNumber">约${value.resultCount}个商品</span>
             </a>
            </li>
             `
-    })
-    $searchul.append(str);
-}
-
-$('.all-search .txt-search').on('input', function() {
-    let str = `
+        })
+        $searchul.append(str);
+    }
+    $('.all-search .txt-search').on('input', function() {
+        let str = `
         <script  class="searchscript" src="http://search.shunguang.com/suggestJson.html?q=${$(this).val()}&jsonpCallback=haier&_=1562652256201">
         </script>
     `
-    $('body').append(str);
-});
-$('.all-search .txt-search').on('blur', function() {
-    $('body').remove('.all-search .searchscript')
-})
-
-// }(jQuery)
+        $('body').append(str);
+    });
+    $('.all-search .txt-search').on('blur', function() {
+        $('body').remove('.all-search .searchscript')
+    })
+}(jQuery)
 
 //2.banner图左边侧边栏，鼠标经过效果
 
@@ -433,4 +431,11 @@ $('.all-search .txt-search').on('blur', function() {
         $('.btn-small').show();
     }
 
+}(jQuery)
+//4.懒加载
+;
+! function($) {
+    $("img.lazy").lazyload({
+        effect: "fadeIn" //图片显示方式
+    });
 }(jQuery)
